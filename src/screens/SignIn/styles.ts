@@ -27,5 +27,5 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     marginBottom: 64,
-  }
-})
+  },
+});

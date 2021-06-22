@@ -1,10 +1,10 @@
-import React from "react";
-import { View, Text, Image, StatusBar } from "react-native";
+import React from 'react';
+import { View, Text, Image, StatusBar } from 'react-native';
 
-import { ButtonIcon } from "../../components/ButtonIcon";
+import { ButtonIcon } from '../../components/ButtonIcon';
 
-import { styles } from "./styles";
-import IllustrationImg from "../../assets/illustration.png";
+import { styles } from './styles';
+import IllustrationImg from '../../assets/illustration.png';
 
 export function SignIn() {
   return (
@@ -22,13 +22,13 @@ export function SignIn() {
 
       <View style={styles.content}>
         <Text style={styles.title}>
-          Organize {"\n"}
-          suas jogatinas {"\n"}
+          Organize {'\n'}
+          suas jogatinas {'\n'}
           facilmente
         </Text>
 
         <Text style={styles.subtitle}>
-          Crie grupos para jogar seus games {"\n"}
+          Crie grupos para jogar seus games {'\n'}
           favoritos com seus amigos
         </Text>
 

@@ -33,6 +33,7 @@ module.exports = {
     'no-console': ['error', { allow: ['tron'] }],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'react-native/no-inline-styles': 'off',
   },
   settings: {
     'import/resolver': {

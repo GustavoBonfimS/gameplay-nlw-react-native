@@ -7,6 +7,7 @@ import { CategorySelect } from '../../components/CategorySelect';
 import { ListHeader } from '../../components/ListHeader';
 import { Appointment } from '../../components/Appointment';
 import { ListDivider } from '../../components/ListDivider';
+import { Background } from '../../components/Background';
 
 import { styles } from './styles';
 
@@ -27,13 +28,26 @@ export function Home() {
       description:
         'É hoje que vamos chegar ao challenger sme perder uma partida da md10',
     },
+    {
+      id: '2',
+      guild: {
+        id: '1',
+        name: 'Lendários',
+        icon: null,
+        owner: true,
+      },
+      category: '1',
+      date: '22/06 ás 20h40',
+      description:
+        'É hoje que vamos chegar ao challenger sme perder uma partida da md10',
+    },
   ];
 
   function handleCategorySelect(categoryId: string) {
     categoryId === category ? setCategory('') : setCategory(categoryId);
   }
   return (
-    <View>
+    <Background>
       <View style={styles.header}>
         <Profile />
         <ButtonAdd />
@@ -56,6 +70,6 @@ export function Home() {
           ItemSeparatorComponent={() => <ListDivider />}
         />
       </View>
-    </View>
+    </Background>
   );
 }
